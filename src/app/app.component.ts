@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng9';
+  constructor( private location: Location) { }
+
+  getBarClass(path) {
+    const currentPath = this.location.path();
+    if (path === currentPath) {
+      return 'active';
+    }
+    return '';
+  }
+
 }

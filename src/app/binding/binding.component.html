@@ -1,0 +1,31 @@
+<h2>Data Binding</h2>
+<table>
+  <tr>
+      <th>Way</th>
+      <th>Syntax</th>
+      <th>Result</th>
+  </tr>
+  <tr>
+      <td>Interpolation</td>
+      <td ngNonBindable>{{counter}}</td>
+      <td>{{counter}}</td>
+  </tr>
+  <tr>
+      <td>Property Binding</td>
+      <td ngNonBindable>[ngClass]="'counter-'+counter%3"</td>
+      <td><span [ngClass]="'counter-'+counter%3">css class is counter-{{counter%3}}</span></td>
+  </tr>
+  <tr>
+      <td>Event Binding</td>
+      <td ngNonBindable>(click)="onClickButton()"</td>
+      <td><button (click)="onClickButton()">Hello</button></td>
+  </tr>
+  <tr>
+      <td>Two Way Binding</td>
+      <td ngNonBindable>[(ngModel)]="name"</td>
+      <td>
+          <input type="text" [(ngModel)]="name" /><br> 
+          Name: {{name}}
+      </td>
+  </tr>
+</table>

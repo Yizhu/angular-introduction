@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { MinionComponent } from './minion/minion.component';
 import { BindingComponent } from './binding/binding.component';
 import { HomeComponent } from './home/home.component';
+import { InputAndOutputComponent } from './input-and-output/input-and-output.component';
+import { ItemDetailComponent } from './input-and-output/item-detail/item-detail.component';
+import { ItemOutputComponent } from './input-and-output/item-output/item-output.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MinionComponent,
     BindingComponent,
-    HomeComponent
+    HomeComponent,
+    InputAndOutputComponent,
+    ItemDetailComponent,
+    ItemOutputComponent
   ],
   imports: [
     BrowserModule,

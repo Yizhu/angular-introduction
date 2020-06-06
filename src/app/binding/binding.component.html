@@ -26,6 +26,7 @@
       <td>
           <input type="text" [(ngModel)]="name" /><br> 
           Name: {{name}}
+          <div *ngIf="!name">Please enter your name</div>
       </td>
   </tr>
 </table>

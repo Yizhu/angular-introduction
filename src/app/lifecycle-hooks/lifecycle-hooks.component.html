@@ -1,0 +1,18 @@
+<h2>Lifecycle Hooks</h2>
+<h3>ngOnChanges</h3>
+<app-ng-on-changes [price]="value"></app-ng-on-changes>
+<button (click)="increase()">Increase</button>
+<button (click)="decrease()">Decrease</button>
+
+<h3>ngOnInit & ngOnDestroy</h3>
+<app-ng-on-init-destroy></app-ng-on-init-destroy> 
+
+<h3>ngDoCheck</h3>
+<app-ng-do-check [price]="price"></app-ng-do-check>
+<button (click)="increasePrice()">Increase</button>
+<button (click)="decreasePrice()">Decrease</button>
+
+<h3>ngAfterContentInit & ngAfterContentChecked</h3>
+<app-after-content>
+  <app-after-content-child #content></app-after-content-child>
+</app-after-content>

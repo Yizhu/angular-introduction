@@ -1,9 +1,10 @@
+<h2>Child component with @Input()</h2>
 <app-item-detail [item]="currentItem"></app-item-detail>
 <hr>
 
+<h2>Child component with @Output()</h2>
 <app-item-output (newItemEvent)="addItem($event)"></app-item-output>
 <h3>Parent component receiving value via @Output()</h3>
-
 <ul>
   <li *ngFor="let item of items">{{item}}</li>
 </ul>

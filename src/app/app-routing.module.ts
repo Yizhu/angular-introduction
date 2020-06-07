@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BindingComponent } from './binding/binding.component';
 import { InputAndOutputComponent } from './input-and-output/input-and-output.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
 { path: 'binding', component: BindingComponent },
 { path: 'home', component: HomeComponent },
 { path: 'inputAndOutput', component: InputAndOutputComponent },
+{ path: 'lifecycleHooks', component: LifecycleHooksComponent },
 { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

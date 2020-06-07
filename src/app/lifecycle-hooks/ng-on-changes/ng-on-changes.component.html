@@ -1,0 +1,4 @@
+<span class="price" [ngClass]="{increase: price > lastPrice, decrease: price < lastPrice }">
+  {{ price }}
+  <span>{{ firstChange ? '' : (price > lastPrice ? '↑' : '↓') }}</span>
+</span>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AfterContentChildComponent } from './after-content-child.component';
+import { AfterViewComponent } from './after-view.component';
 
-describe('AfterContentChildComponent', () => {
-  let component: AfterContentChildComponent;
-  let fixture: ComponentFixture<AfterContentChildComponent>;
+describe('AfterViewComponent', () => {
+  let component: AfterViewComponent;
+  let fixture: ComponentFixture<AfterViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AfterContentChildComponent ]
+      declarations: [ AfterViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AfterContentChildComponent);
+    fixture = TestBed.createComponent(AfterViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -15,7 +15,8 @@ import { NgOnChangesComponent } from './lifecycle-hooks/ng-on-changes/ng-on-chan
 import { NgOnInitDestroyComponent } from './lifecycle-hooks/ng-on-init-destroy/ng-on-init-destroy.component';
 import { NgDoCheckComponent } from './lifecycle-hooks/ng-do-check/ng-do-check.component';
 import { AfterContentComponent } from './lifecycle-hooks/after-content/after-content.component';
-import { AfterContentChildComponent } from './lifecycle-hooks/after-content-child/after-content-child.component';
+import { AfterViewComponent } from './lifecycle-hooks/after-view/after-view.component';
+import { AfterChildComponent } from './lifecycle-hooks/after-child/after-child.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AfterContentChildComponent } from './lifecycle-hooks/after-content-chil
     NgOnInitDestroyComponent,
     NgDoCheckComponent,
     AfterContentComponent,
-    AfterContentChildComponent
+    AfterViewComponent,
+    AfterChildComponent
   ],
   imports: [
     BrowserModule,

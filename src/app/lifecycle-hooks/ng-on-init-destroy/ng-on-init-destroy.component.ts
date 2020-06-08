@@ -13,7 +13,7 @@ export class NgOnInitDestroyComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.subscription = interval(5000).subscribe(val => {
       this.counter = val;
-      // console.log(this.counter);
+      console.log(this.counter);
     });
   }
 

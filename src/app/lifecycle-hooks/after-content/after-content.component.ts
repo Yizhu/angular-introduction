@@ -1,5 +1,4 @@
 import { Component, OnInit, ContentChild, AfterContentChecked, AfterContentInit } from '@angular/core';
-import { AfterContentChildComponent } from '../after-content-child/after-content-child.component';
 
 @Component({
   selector: 'app-after-content',
@@ -21,8 +20,8 @@ export class AfterContentComponent implements OnInit, AfterContentChecked, After
   ngAfterContentInit() {
     // contentChild is set after the content has been initialized
     console.log('AfterContentInit');
-    this.doSomething();
     console.log('contentChild: ', this.contentChild.hero);
+    this.doSomething();
   }
 
   ngAfterContentChecked() {

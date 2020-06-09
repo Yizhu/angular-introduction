@@ -1,24 +1,14 @@
-import { Component, OnInit, Input, OnChanges, OnDestroy } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-minion',
   templateUrl: './minion.component.html',
   styleUrls: ['./minion.component.scss']
 })
-export class MinionComponent implements OnInit, OnChanges, OnDestroy {
-  @Input() title = '--';
+export class MinionComponent implements OnInit {
+  @Input() title;
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.title);
-  }
-
-  ngOnChanges(): void {
-    console.log(this.title);
-  }
-
-  ngOnDestroy(): void {
-    console.log(this.title);
-  }
+  ngOnInit(): void {}
 }

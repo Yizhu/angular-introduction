@@ -20,6 +20,10 @@ import { AfterViewComponent } from './lifecycle-hooks/after-view/after-view.comp
 import { AfterChildComponent } from './lifecycle-hooks/after-child/after-child.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { FlyingHeroesPipe, FlyingHeroesImpurePipe } from './shared/flying-heroes.pipe';
+import { FlyingHeroesComponent } from './pipe/flying-heroes/flying-heroes.component';
+import { FlyingHeroesImpureComponent } from './pipe/flying-heroes-impure/flying-heroes-impure.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,12 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     AfterViewComponent,
     AfterChildComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    PipeComponent,
+    FlyingHeroesPipe,
+    FlyingHeroesImpurePipe,
+    FlyingHeroesComponent,
+    FlyingHeroesImpureComponent
   ],
   imports: [
     BrowserModule,

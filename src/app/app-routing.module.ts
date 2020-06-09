@@ -6,6 +6,7 @@ import { InputAndOutputComponent } from './input-and-output/input-and-output.com
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
 { path: 'lifecycleHooks', component: LifecycleHooksComponent },
 { path: 'heroes', component: HeroesComponent},
 { path: 'heroDetail/:id', component: HeroDetailComponent },
+{ path: 'pipe', component: PipeComponent },
 { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

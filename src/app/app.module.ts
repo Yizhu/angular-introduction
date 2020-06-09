@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { MinionComponent } from './minion/minion.component';
 import { BindingComponent } from './binding/binding.component';
@@ -17,6 +18,8 @@ import { NgDoCheckComponent } from './lifecycle-hooks/ng-do-check/ng-do-check.co
 import { AfterContentComponent } from './lifecycle-hooks/after-content/after-content.component';
 import { AfterViewComponent } from './lifecycle-hooks/after-view/after-view.component';
 import { AfterChildComponent } from './lifecycle-hooks/after-child/after-child.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +36,15 @@ import { AfterChildComponent } from './lifecycle-hooks/after-child/after-child.c
     NgDoCheckComponent,
     AfterContentComponent,
     AfterViewComponent,
-    AfterChildComponent
+    AfterChildComponent,
+    HeroesComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

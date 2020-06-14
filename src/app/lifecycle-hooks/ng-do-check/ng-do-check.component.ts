@@ -24,6 +24,7 @@ export class NgDoCheckComponent implements OnInit, OnChanges, DoCheck {
   }
 
   ngDoCheck() {
+    console.log('Price Component Input Changed');
     // Detect and act upon changes that Angular can't or won't detect on its own.
     if (this.price && this.lastPriceValue && this.price.value !== this.lastPriceValue) {
       this.firstChange = false;

@@ -1,21 +1,9 @@
 <h2>Lifecycle Hooks</h2>
-<h3>ngOnChanges</h3>
-<app-ng-on-changes [price]="value"></app-ng-on-changes>
-<button (click)="increase()">Increase</button>
-<button (click)="decrease()">Decrease</button>
 
-<h3>ngOnInit & ngOnDestroy</h3>
-<app-ng-on-init-destroy></app-ng-on-init-destroy> 
+<button class="button" routerLink="/lifecycleHooks/onchange">ngOnChanges</button>
+<button class="button" routerLink="/lifecycleHooks/initDestory">ngOnInit & ngOnDestroy</button>
+<button class="button" routerLink="/lifecycleHooks/doCheck">ngDoCheck</button>
+<button class="button" routerLink="/lifecycleHooks/afterContent">ngAfterContentInit & ngAfterContentChecked</button>
+<button class="button" routerLink="/lifecycleHooks/afterView">ngAfterViewInit & ngAfterViewChecked</button>
 
-<h3>ngDoCheck</h3>
-<app-ng-do-check [price]="price"></app-ng-do-check>
-<button (click)="increasePrice()">Increase</button>
-<button (click)="decreasePrice()">Decrease</button>
-
-<h3>ngAfterContentInit & ngAfterContentChecked</h3>
-<app-after-content>
-  <app-after-child #content></app-after-child>
-</app-after-content>
-
-<h3>ngAfterViewInit & ngAfterViewChecked</h3>
-<app-after-view></app-after-view>
+<router-outlet></router-outlet>

@@ -11,7 +11,7 @@ export class AppComponent {
 
   getBarClass(path) {
     const currentPath = this.location.path();
-    if (path === currentPath) {
+    if (currentPath.indexOf(path) !== -1) {
       return 'active';
     }
     return '';

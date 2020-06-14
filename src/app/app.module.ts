@@ -24,6 +24,9 @@ import { PipeComponent } from './pipe/pipe.component';
 import { FlyingHeroesPipe, FlyingHeroesImpurePipe } from './shared/flying-heroes.pipe';
 import { FlyingHeroesComponent } from './pipe/flying-heroes/flying-heroes.component';
 import { FlyingHeroesImpureComponent } from './pipe/flying-heroes-impure/flying-heroes-impure.component';
+import { NgOnChangesParentComponent } from './lifecycle-hooks/ng-on-changes-parent/ng-on-changes-parent.component';
+import { NgDoCheckParentComponent } from './lifecycle-hooks/ng-do-check-parent/ng-do-check-parent.component';
+import { AfterContentParentComponent } from './lifecycle-hooks/after-content-parent/after-content-parent.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { FlyingHeroesImpureComponent } from './pipe/flying-heroes-impure/flying-
     FlyingHeroesPipe,
     FlyingHeroesImpurePipe,
     FlyingHeroesComponent,
-    FlyingHeroesImpureComponent
+    FlyingHeroesImpureComponent,
+    NgOnChangesParentComponent,
+    NgDoCheckParentComponent,
+    AfterContentParentComponent
   ],
   imports: [
     BrowserModule,

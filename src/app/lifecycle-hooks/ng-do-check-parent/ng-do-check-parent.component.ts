@@ -20,4 +20,7 @@ export class NgDoCheckParentComponent implements OnInit {
     this.price.value -= 1;
   }
 
+  test() {
+    alert(JSON.stringify(this.price));
+  }
 }

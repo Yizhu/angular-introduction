@@ -33,4 +33,8 @@ export class NgDoCheckComponent implements OnInit, OnChanges, DoCheck {
     }
     this.lastPriceValue = this.price.value;
   }
+
+  test() {
+    this.price.value++;
+  }
 }

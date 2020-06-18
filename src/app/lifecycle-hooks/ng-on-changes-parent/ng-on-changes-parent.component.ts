@@ -19,4 +19,8 @@ export class NgOnChangesParentComponent implements OnInit {
   decrease() {
     this.value -= 1;
   }
+
+  test() {
+    alert(this.value);
+  }
 }

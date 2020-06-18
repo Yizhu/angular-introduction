@@ -21,4 +21,8 @@ export class NgOnChangesComponent implements OnInit, OnChanges {
     this.lastPrice = changes.price.previousValue;
   }
 
+  test() {
+    this.price++;
+  }
+
 }

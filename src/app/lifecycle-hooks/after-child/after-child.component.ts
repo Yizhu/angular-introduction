@@ -10,6 +10,7 @@ export class AfterChildComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('AfterChildComponent ngOnInit')
   }
 
 }
